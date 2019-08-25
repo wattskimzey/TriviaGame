@@ -18,6 +18,7 @@ added questions.js; hooked that in and app.js too
 console logs added to js files to test
 added button to test bootstrap
 updated bootstrap to minified
+updated console.log in app.js to test jquery link
 
 
 

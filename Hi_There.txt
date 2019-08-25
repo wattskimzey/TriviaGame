@@ -27,6 +27,7 @@ added test questions to questions.js
 added counter to app.js
 added currentQuestion to app.js
 added score to app.js
+added lost to app.js
 
 
 

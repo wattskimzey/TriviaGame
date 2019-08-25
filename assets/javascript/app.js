@@ -4,10 +4,19 @@ let score = 0;
 let lost = 0;
 let timer;
 
+function nextQuestion() {
+
+    currentQuestion++;
+    loadQuestion();
+}
+
+
 
 function timeUp() {
     clearInterval(timer);
 
+    lost++;
+    nextQuestion();
 }
 
 

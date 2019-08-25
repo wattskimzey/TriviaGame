@@ -34,6 +34,7 @@ massaged h4 format
 added timer into function
 added load choices function
 updated local css
+created countdown and timeup functions
 
 
 

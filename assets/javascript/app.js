@@ -4,7 +4,28 @@ let score = 0;
 let lost = 0;
 let timer;
 
+
+function timeUp() {
+    clearInterval(timer);
+
+}
+
+
+function countDown() {
+    counter--;
+
+    $('#time').html("This is how many seconds you have left, oh Knower of Little Trivia... " + counter);
+
+    if(counter === 0) {
+        timeUp();
+    }
+
+}
+
 function loadQuestion() {
+
+    counter = 5;
+    timer = setInterval(countDown, 1000);
 
     const question = quizQuestions[currentQuestion].question;
     const choices = quizQuestions[currentQuestion].choices;

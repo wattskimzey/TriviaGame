@@ -1,1 +1,9 @@
 So this will be the Totally Trivia game. Okay, i need to go make some folders and stuff.
+
+step 1: created repo and cloned it
+
+
+
+
+
+

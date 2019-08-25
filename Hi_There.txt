@@ -30,7 +30,7 @@ added score to app.js
 added lost to app.js
 added timer to app.js
 created loadQuestion function and displayed
-
+massaged h4 format
 
 
 

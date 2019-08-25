@@ -9,7 +9,9 @@ function loadQuestion() {
     const question = quizQuestions[currentQuestion].question;
     const choices = quizQuestions[currentQuestion].choices;
 
-    $('#game').html('<h4>' + question + '<h4>');
+    $('#game').html(`
+        <h4>${question}</h4>
+    `);
 }
 
 loadQuestion();

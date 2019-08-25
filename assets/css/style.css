@@ -1,11 +1,4 @@
-.header {
-    width: 45%;
-    margin-left: 27%;
-    text-align: center;
-    background-color: #ff0000;
-    border: 8px solid;
-    border-top-color: #00ff4c;
-    border-right-color: #00ff4c;
-    border-bottom-color: #00ff4c;
-    border-left-color: #00ff4c;
+body{
+    background-color: red;
+    height: 100vh;
 }

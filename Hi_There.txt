@@ -5,6 +5,8 @@ step 2: created index.html
 step 3: added the jquery library to index
 step 4: create assets folder
 step 5a: create assets/css
+step 5b: create assets/javascript
+step 5c: create assets/images
 
 
 

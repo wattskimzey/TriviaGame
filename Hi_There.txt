@@ -7,6 +7,7 @@ step 4: create assets folder
 step 5a: create assets/css
 step 5b: create assets/javascript
 step 5c: create assets/images
+step 6: create style.css file
 
 
 

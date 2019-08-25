@@ -21,6 +21,7 @@ updated bootstrap to minified
 updated console.log in app.js to test jquery link
 removed test html from index
 added jumbotron to index
+added start button to index
 
 
 

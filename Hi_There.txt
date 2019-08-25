@@ -8,7 +8,8 @@ step 5a: create assets/css
 step 5b: create assets/javascript
 step 5c: create assets/images
 step 6: create style.css file
-
+step 7: create app.js file
+step 8: added catface image
 
 
 

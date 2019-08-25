@@ -32,6 +32,7 @@ added timer to app.js
 created loadQuestion function and displayed
 massaged h4 format
 added timer into function
+added load choices function
 
 
 

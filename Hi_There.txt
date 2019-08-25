@@ -3,6 +3,7 @@ So this will be the Totally Trivia game. Okay, i need to go make some folders an
 step 1: created repo and cloned it
 step 2: created index.html
 step 3: added the jquery library to index
+step 4: create assets folder
 
 
 

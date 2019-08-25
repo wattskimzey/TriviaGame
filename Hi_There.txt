@@ -14,7 +14,7 @@ added reset.css
 added title, css links and jquery cdn
 hooked in bootstrap
 updated css
-
+added questions.js; hooked that in and app.js too
 
 
 

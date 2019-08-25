@@ -19,6 +19,8 @@ console logs added to js files to test
 added button to test bootstrap
 updated bootstrap to minified
 updated console.log in app.js to test jquery link
+removed test html from index
+added jumbotron to index
 
 
 

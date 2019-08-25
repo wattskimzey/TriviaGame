@@ -1,1 +1,1 @@
-console.log($);
+let counter = 30;

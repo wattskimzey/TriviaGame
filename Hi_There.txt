@@ -23,6 +23,8 @@ removed test html from index
 added jumbotron to index
 added start button to index
 added h2 class time and div id game
+added test questions to questions.js
+added counter to app.js
 
 
 

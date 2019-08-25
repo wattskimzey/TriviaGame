@@ -25,6 +25,8 @@ added start button to index
 added h2 class time and div id game
 added test questions to questions.js
 added counter to app.js
+added currentQuestion to app.js
+added score to app.js
 
 
 

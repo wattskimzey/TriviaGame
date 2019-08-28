@@ -12,6 +12,6 @@ const quizQuestions = [
     {
         question: "In what way can you make a cat's litterbox less stinky?",
         choices: ["get more cats", "buy a dog", "you know what dogs like to eat, don't you?", "dogs like to eat MMMPPPHH MPPPHHH", "we're sorry, these answers have grown disgusting. this is the correct answer"],
-        correctAnswer: "we're sorry, these answers have grown disgusting. this is the correct answer"f
+        correctAnswer: "we're sorry, these answers have grown disgusting. this is the correct answer"
     },
 ];

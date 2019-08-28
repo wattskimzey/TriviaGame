@@ -36,6 +36,7 @@ added load choices function
 updated local css
 created countdown and timeup functions
 added nextquestion function
+added click function
 
 
 

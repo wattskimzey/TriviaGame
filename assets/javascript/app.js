@@ -5,9 +5,16 @@ let lost = 0;
 let timer;
 
 function nextQuestion() {
+    const isQuestionOver = (quizQuestions.length - 1) === currentQuestion;
 
+    if(isQuestionOver) {
+        console.log("GAME IS OVER CAT LOSER!!!");
+
+    }
+    else {
     currentQuestion++;
     loadQuestion();
+}
 }
 
 
@@ -54,4 +61,23 @@ function loadChoices(choices) {
     }
     return result;
 }
+
+$(document).on('click', '.choice', function() {
+   const selectedAnswer = $(this).attr('data-answer');
+   const correctAnswer = quizQuestions[currentQuestion].correctAnswer;
+
+   if(correctAnswer === selectedAnswer ){
+        score++;
+        console.log("wins");
+   } else {
+       lost++;
+       console.log("loses");
+   }
+console.log("yeep ", selectedAnswer);
+
+});;
+
+
+
+
 loadQuestion();

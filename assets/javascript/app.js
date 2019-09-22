@@ -19,7 +19,8 @@ function nextQuestion() {
 function timeUp() {
     clearInterval(timer);
     lost++;
-    nextQuestion();
+    preLoadImage('lost');
+    setTimeout(nextQuestion, 3 * 1000);
 }
 
 function countDown() {
@@ -57,12 +58,16 @@ $(document).on('click', '.choice', function() {
    const correctAnswer = quizQuestions[currentQuestion].correctAnswer;
    if(correctAnswer === selectedAnswer ){
         score++;
-        nextQuestion();
+        preLoadImage('win');
+        setTimeout(nextQuestion, 3 * 1000);
         console.log("wins");
+        
    } else {
        lost++;
-       nextQuestion();
+       preLoadImage('lost');
+       setTimeout(nextQuestion, 3 * 1000);
        console.log("loses");
+       
    }
     console.log("yeep ", selectedAnswer);
 
@@ -94,18 +99,26 @@ function loadRemainingQuestions(){
 return `Remaining questions: ${remainingQuestions}/${totalQuestions}`;
 }
 
+function randomImage(images){
+    const random = Math.floor(Math.random() * images.length);
+    const randomImage = images[random];
+    return randomImage;
+}
+
 function preLoadImage(status){
     const correctAnswer = quizQuestions[currentQuestion].correctAnswer;
     if (status === 'win'){
         $('#game').html(`
             <p class="preload-image">YAY YOU HAZ RIGHT ANSWER</p>
-            <p class="preload-image">The correct answer is ${correctAnswer}</p>
+            <p class="preload-image">The correct answer is <b>${correctAnswer}</b></p>
+            <img src="${randomImage(funImages)}"/>
         `);
     }
     else {
         $('#game').html(`
         <p class="preload-image">BOO YOU ARE THE WRONGZ</p>
-        <p class="preload-image">The correct answer was  ${correctAnswer}</p>
+        <p class="preload-image">The correct answer was <b>${correctAnswer}</b></p>
+        <img src="${randomImage(sadImages)}"/>
     `);
     }
 }

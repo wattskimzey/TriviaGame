@@ -21,13 +21,13 @@ const quizQuestions = [
     }
 ];
 const funImages = [
-    '../images/dab.gif',
-    '../images/win2.gif',
-    '../images/winpic.JPG'
+    '../TriviaGame/assets/images/dab.gif',
+    '../TriviaGame/assets/images/win2.gif',
+    '../TriviaGame/assets/images/winpic.JPG'
 ];
 
 const sadImages = [
-    '../images/loser.gif',
-    '../images/partyover.gif',
-    '../images/losepic.JPG'
+    '../TriviaGame/assets/images/loser.gif',
+    '../TriviaGame/assets/images/partyover.gif',
+    '../TriviaGame/assets/images/losepic.JPG'
 ];

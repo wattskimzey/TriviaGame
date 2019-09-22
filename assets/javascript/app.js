@@ -1,4 +1,4 @@
-let counter = 10;
+let counter = 30;
 let currentQuestion = 0;
 let score = 0;
 let lost = 0;
@@ -32,7 +32,7 @@ function countDown() {
 }
 
 function loadQuestion() {
-    counter = 10;
+    counter = 30;
     timer = setInterval(countDown, 1000);
     const question = quizQuestions[currentQuestion].question;
     const choices = quizQuestions[currentQuestion].choices;
@@ -85,7 +85,7 @@ function displayResult() {
 
 $(document).on('click', '#reset', function(){
     console.log("is this resetting");
-    counter = 10;
+    counter = 30;
     currentQuestion = 0;
     score = 0;
     lost = 0;
@@ -123,4 +123,8 @@ function preLoadImage(status){
     }
 }
 
-loadQuestion();
+$('#start').click(function(){
+    $('#start').remove();
+    $('#time').html(counter);
+    loadQuestion();
+});

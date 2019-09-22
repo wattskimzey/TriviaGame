@@ -19,6 +19,16 @@ const quizQuestions = [
         choices: ["none", "yes", "no", "purple", "Hi. I'm the correct answer!"],
         correctAnswer: "we're sorry, these answers have grown disgusting. this is the correct answer"
     }
+    {
+        question: "do you like cats?",
+        choices: ["no", "no", "no", "no", "yes"],
+        correctAnswer: "we're sorry, these answers have grown disgusting. this is the correct answer"
+    }
+    {
+        question: "what famous philosopher loved cats?",
+        choices: ["Englebert Humperdinck", "Mel Torme", "Lawrence Welk", "Benny Goodman", "Darth Siddius"],
+        correctAnswer: "we're sorry, these answers have grown disgusting. this is the correct answer"
+    }
 ];
 const funImages = [
     '../TriviaGame/assets/images/dab.gif',

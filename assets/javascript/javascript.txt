@@ -1,2 +1,2 @@
 I have to make this dumb file so bash will push my javascript folder to github
-i hate github
+i hate github. still

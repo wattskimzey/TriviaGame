@@ -42,6 +42,7 @@ added more pics and win lose image functionality
 fixed image popups
 added start functionality and more questions
 final push because github is annoying
+yet another push
 
 
 

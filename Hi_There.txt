@@ -37,7 +37,7 @@ updated local css
 created countdown and timeup functions
 added nextquestion function
 added click function
-
+added timer stuff and reset function and win lose pics
 
 
 

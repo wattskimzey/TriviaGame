@@ -14,4 +14,20 @@ const quizQuestions = [
         choices: ["get more cats", "buy a dog", "you know what dogs like to eat, don't you?", "dogs like to eat MMMPPPHH MPPPHHH", "we're sorry, these answers have grown disgusting. this is the correct answer"],
         correctAnswer: "we're sorry, these answers have grown disgusting. this is the correct answer"
     },
+    {
+        question: "How many cats do you own?",
+        choices: ["none", "yes", "no", "purple", "Hi. I'm the correct answer!"],
+        correctAnswer: "we're sorry, these answers have grown disgusting. this is the correct answer"
+    }
+];
+const funImages = [
+    '../images/dab.gif',
+    '../images/win2.gif',
+    '../images/winpic.JPG'
+];
+
+const sadImages = [
+    '../images/loser.gif',
+    '../images/partyover.gif',
+    '../images/losepic.JPG'
 ];

@@ -1,4 +1,4 @@
-let counter = 5;
+let counter = 10;
 let currentQuestion = 0;
 let score = 0;
 let lost = 0;
@@ -31,7 +31,7 @@ function countDown() {
 }
 
 function loadQuestion() {
-    counter = 5;
+    counter = 10;
     timer = setInterval(countDown, 1000);
     const question = quizQuestions[currentQuestion].question;
     const choices = quizQuestions[currentQuestion].choices;
@@ -39,6 +39,7 @@ function loadQuestion() {
     $('#game').html(`
         <h4>${question}</h4>
         ${loadChoices(choices)}
+        ${loadRemainingQuestions()}
     `);
 }
 
@@ -79,12 +80,34 @@ function displayResult() {
 
 $(document).on('click', '#reset', function(){
     console.log("is this resetting");
-    counter = 5;
+    counter = 10;
     currentQuestion = 0;
     score = 0;
     lost = 0;
     timer = null;
     loadQuestion();
 });
+
+function loadRemainingQuestions(){
+    const remainingQuestions = quizQuestions.length - (currentQuestion +1);
+    const totalQuestions = quizQuestions.length;
+return `Remaining questions: ${remainingQuestions}/${totalQuestions}`;
+}
+
+function preLoadImage(status){
+    const correctAnswer = quizQuestions[currentQuestion].correctAnswer;
+    if (status === 'win'){
+        $('#game').html(`
+            <p class="preload-image">YAY YOU HAZ RIGHT ANSWER</p>
+            <p class="preload-image">The correct answer is ${correctAnswer}</p>
+        `);
+    }
+    else {
+        $('#game').html(`
+        <p class="preload-image">BOO YOU ARE THE WRONGZ</p>
+        <p class="preload-image">The correct answer was  ${correctAnswer}</p>
+    `);
+    }
+}
 
 loadQuestion();

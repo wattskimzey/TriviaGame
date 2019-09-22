@@ -38,6 +38,7 @@ created countdown and timeup functions
 added nextquestion function
 added click function
 added timer stuff and reset function and win lose pics
+added more pics and win lose image functionality
 
 
 
